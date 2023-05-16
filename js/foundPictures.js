@@ -135,16 +135,14 @@ function *createPaginacion(total) {
 }
 
 function adressPagination(e) {
-    if(e.target.classList.contains('siguiente')) {
+    if(e.target.classList.contains('next')) {
 
         actualPage= Number( e.target.dataset.page);
         searchPictures();
         form.scrollIntoView();
     }
-    
-   
 }
 
- function explanation() {
+function explanation() {
         const explanationUser = window.alert('In this project an example of a Pictures search engine will be shown. The propose of this project is to show that i am able to work with APIs, bootstrap, css, html, tailwind and javascript.');
- }
+}
